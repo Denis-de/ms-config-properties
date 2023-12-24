@@ -1,0 +1,20 @@
+server:
+  port: 8690
+spring:
+  application:
+    name: store-book-service
+  profiles:
+      active: dev
+  cloud:
+    stream:
+      kafka:
+        binder:
+          auto-add-partitions: true
+      bindings:
+        checkBookEventProcessor-in-0:
+          distination: store-book
+          config:
+            discovery:
+              enabled: true
+              service-id: config-server
+
