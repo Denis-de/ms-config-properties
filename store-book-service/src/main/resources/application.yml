@@ -4,7 +4,7 @@ spring:
   application:
     name: store-book-service
   profiles:
-      active: dev
+      active: master
   cloud:
     stream:
       kafka:
