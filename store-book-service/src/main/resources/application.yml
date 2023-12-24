@@ -1,5 +1,5 @@
 server:
-  port: 8690
+  port: 8052
 spring:
   application:
     name: store-book-service
