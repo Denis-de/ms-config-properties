@@ -4,7 +4,7 @@ import com.exemle.storebookservice.model.RemotePropertyField;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-@RestController
+@RestControlle
 public class StoreBookServiceController {
     private RemotePropertyField field;
 
