@@ -14,9 +14,10 @@ spring:
       server:
         git:
           uri: https://github.com/Denis-de/ms-config-properties
-          search-paths:
-            - "/{application}/{profile}"
-#spring:
+          search-paths: "/ms-config-properties/{application}/{profile}"
+          default-label: main
+
+      #spring:
  # config:
   #  activate:
    #   on-profile: native
