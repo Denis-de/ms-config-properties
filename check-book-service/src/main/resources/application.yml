@@ -7,24 +7,42 @@ spring:
   profiles:
       active: dev
   cloud:
+    config:
+      uri: ${CONFIG_URI:http://localhost:8886}
+      fail-fast: true
+      retry:
+        max-attempts: 20
+        max-interval: 15000
+        initial-interval: 10000
+      discovery:
+        enabled: true
+        service-id: config-server
     bus:
       refresh:
         enabled: true
-    stream:
-      kafka:
-        binder:
-          auto-add-partitions: true
+      env:
+        enabled: true
+  kafka:
+    bootstrap-servers: ${KAFKA_ADDR:http://localhost:9092}
+  #cloud:
+   # bus:
+    #  refresh:
+     #   enabled: true
+   # stream:
+    #  kafka:
+     #   binder:
+      #    auto-add-partitions: true
 
-      bindings:
-        checkBookEventProcessor-in-0:
-          distination: create-book
-          checkBookEventProcessor-out-0:
-            distination: store-book
-            fail-fast: true
-            retry:
-              max-attempts: 20
-              max-interval: 15000
-              initial-interval: 10000
+      #bindings:
+       # checkBookEventProcessor-in-0:
+        #  distination: create-book
+         # checkBookEventProcessor-out-0:
+          #  distination: store-book
+           # fail-fast: true
+            #retry:
+             # max-attempts: 20
+              #max-interval: 15000
+             # initial-interval: 10000
 
 eureka:
   client:
@@ -35,10 +53,3 @@ eureka:
       defaultZone: ${EUREKA_URI:http://localhost:8761/eureka}
  # instance:
   #  prefer-ip-address: true
-
-#eureka:
-#    enabled: true
-#   register-with-eureka: true
-#   fetch-registry: true
-#    serviceUrl:
-#    defaultZone: http://localhost:8761/eureka
