@@ -5,7 +5,7 @@ spring:
   application:
     name: check-book-service
   profiles:
-      active: master
+      active: dev
   cloud:
     bus:
       refresh:
