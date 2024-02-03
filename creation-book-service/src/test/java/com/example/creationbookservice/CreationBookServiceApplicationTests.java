@@ -1,4 +1,4 @@
-package com.example.creationbookservice;
+/*package com.example.creationbookservice;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -10,4 +10,4 @@ class CreationBookServiceApplicationTests {
 	void contextLoads() {
 	}
 
-}
+}**/

@@ -4,7 +4,7 @@ spring:
   application:
     name: config-server
 server:
-  port: 8888
+  port: 8886
 ---
 spring:
   profiles:
@@ -14,8 +14,11 @@ spring:
       server:
         git:
           uri: https://github.com/Denis-de/ms-config-properties
-          search-paths: "/ms-config-properties/{application}/{profile}"
-          default-label: main
+          search-paths:
+             -"/{application}/{profile}"
+          default-label: master
+          username: Denis-de
+          password: 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
 
       #spring:
  # config:
