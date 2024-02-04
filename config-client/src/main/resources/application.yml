@@ -13,3 +13,5 @@ spring:
         discovery:
           enabled: true
           service-id: config-server
+  #kafka:
+   # bootstrap-servers: ${KAFKA_ADDR:http://localhost:9092}

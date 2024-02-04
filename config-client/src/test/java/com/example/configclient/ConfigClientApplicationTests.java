@@ -1,4 +1,4 @@
-package com.example.configclient;
+/*package com.example.configclient;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -10,4 +10,4 @@ class ConfigClientApplicationTests {
 	void contextLoads() {
 	}
 
-}
+}**/

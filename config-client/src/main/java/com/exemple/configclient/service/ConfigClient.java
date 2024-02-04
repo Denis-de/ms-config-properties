@@ -4,6 +4,6 @@ import com.exemple.configclient.model.Book;
 
 import java.util.List;
 
-public interface ClientService {
+public interface ConfigClient {
     public List<Book> getAllBooks();
 }
