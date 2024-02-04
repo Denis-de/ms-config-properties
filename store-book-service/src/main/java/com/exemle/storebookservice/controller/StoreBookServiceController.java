@@ -5,7 +5,7 @@ import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-/*@RestController
+@RestController
 @AllArgsConstructor
 public class StoreBookServiceController {
     private RemotePropertyField field;
@@ -15,4 +15,3 @@ public class StoreBookServiceController {
         return "Data: " + field.getField();
     }
 }
-**/
